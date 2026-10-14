@@ -18,7 +18,9 @@ namespace GL {
         VertexBuffer();
         ~VertexBuffer();
 
-        inline void bind(void);
+        VertexBuffer(VertexBuffer const &) = delete;    // Copy Constructor
+
+        void bind(void);
         void upload(void const *data, 
                     std::size_t bytes, 
                     GLenum usage);
@@ -34,6 +36,8 @@ namespace GL {
     public:
         VertexArray();
         ~VertexArray();
+
+        VertexArray(VertexArray const &) = delete;  // Copy Constructor
 
         void bind(void);
         void setAttribute(VertexBuffer& vbo, 

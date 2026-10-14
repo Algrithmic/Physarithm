@@ -1,11 +1,11 @@
 #include <iostream>
 #include <stdexcept>
 
-#include "Application.hpp"
+#include "Core/Application.hpp"
 
 int main( void ) {
     try {
-        Application app;
+        Core::Application app;
         app.run();
     }
     catch (std::exception const &e) {

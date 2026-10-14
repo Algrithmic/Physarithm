@@ -1,5 +1,5 @@
 # Program Variables
-PROGNAME := PolyCepharithm
+PROGNAME := Physarithm
 SOURCE_DIR := ./source
 BUILD_DIR  := ./build
 VENDOR_DIR := ./vendor
